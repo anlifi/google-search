@@ -1,9 +1,107 @@
-h1.display-1 {
-  font-size: 7rem;
+html, body {
+  background: #202124;
+  color: #bdc1c6;
+  font-size: 14px;
+  font-family: arial, sans-serif;
+  min-height: 100%;
+  height: 100%;
 }
 
-h6.grey {
-  color: #303133;
+a.nav-link {
+  color: white;
+}
+
+a.nav-link:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+header.central {
+  min-height: 92px;
+  max-height: 290px;
+  height: calc(100% - 560px);
+}
+header.central span {
+  color: #4487f6;
+  font: 16px/16px roboto-regular, arial, sans-serif;
+}
+
+header h4.advanced {
+  color: #f28b82;
+}
+
+img.logo {
+  aspect-ratio: auto 272/92;
+  height: 92px;
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+  object-position: center bottom;
+  width: auto;
+}
+
+img.logo-sm {
+  height: auto;
+  width: 74px;
+}
+
+.btn {
+  background-color: #303134;
+  border: 1px solid #303134;
+  color: white;
+  height: 36px;
+  min-width: 54px;
+  padding: 0 16px;
+}
+
+.btn.advanced {
+  background: #8ab4f8;
+  border-color: #8ab4f8;
+  border-radius: 2px;
+  color: #202124;
+  font-size: 11px;
+  height: 30px;
+  padding: 0 12px;
+}
+
+form#advanced {
+  max-width: 1140px;
+  color: white;
+}
+
+input {
+  background-color: transparent;
+  border: 1px solid #5f6368;
+  color: white;
+  font-size: 13px;
+  height: 30px;
+}
+
+label.col-form-label {
+  font-size: 13px;
+}
+
+p.small {
+  font-size: 11px;
+  margin-bottom: 0;
+}
+
+.searchbar {
+  width: auto;
+  margin: 0 auto;
+  max-width: 584px;
+  padding-top: 6px;
+}
+
+textarea {
+  background-color: transparent;
+  border: 1px solid #5f6368;
+  color: white;
+  font-size: 16px;
+  line-height: 22px;
+  min-height: 44px;
+  resize: none;
+  word-wrap: break-word;
 }
 
 .hidden {
@@ -11,39 +109,6 @@ h6.grey {
   margin: 0;
   padding: 0;
   visibility: hidden;
-}
-
-.container.middle {
-  margin-top: 200px;
-}
-
-form#advanced {
-  max-width: 1140px;
-}
-
-label.col-form-label {
-  font-size: 0.9rem;
-}
-
-p.small {
-  font-size: 0.8rem;
-  margin-bottom: 0;
-}
-
-span.blue {
-  color: #0d6efd;
-}
-
-span.green {
-  color: #2e944b;
-}
-
-span.red {
-  color: #ea433b;
-}
-
-span.yellow {
-  color: #f5b82e;
 }
 
 @media only screen and (max-width: 992px) {

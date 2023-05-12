@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <nav class="bg-light border navbar navbar-expand-sm navbar-light">
+    <nav class="navbar navbar-expand-sm">
         <div class="container-fluid">
             <div class="navbar-nav ms-auto mt-2">
                 <a class="nav-link" href="index.html">Google Search</a>
@@ -20,37 +20,22 @@
         </div>
     </nav>
 
-    <header class="mt-5 text-center">
-        <div class="container middle">
-            <div class="row">
-                <div class="col"></div>
-                <h1 class="col display-1 fw-medium">
-                    <span class="blue">G</span><span class="red">o</span><span class="yellow">o</span><span
-                        class="blue">g</span><span class="green">l</span><span class="red">e</span>
-                </h1>
-                <div class="col"></div>
-            </div>
-            <div class="row">
-                <div class="col"></div>
-                <div class="col">
-                    <h1 class="col display-1 fw-medium hidden">
-                        <span class="blue">G</span><span class="red">o</span><span class="yellow">o</span><span
-                            class="blue">g</span><span class="green">l</span><span class="red">e</span>
-                    </h1>
-                    <h6 class="col grey ps-5 text-end">Images</h6>
-                </div>
-                <div class="col"></div>
-            </div>
+    <header class="position-relative central">
+        <div class="position-absolute bottom-0 start-50 translate-middle-x">
+            <img alt="Google logo" class="logo"
+                src="https://www.google.de/images/branding/googlelogo/2x/googlelogo_light_color_272x92dp.png">
+            <span class="position-absolute bottom-0 end-0">images</span>
         </div>
     </header>
 
-    <main class="container-fluid py-3 text-center">
+    <main class="container-fluid py-4 text-center">
         <form action="https://www.google.com/search?tbm=isch">
-            <div class="mb-4">
-                <input autofocus class="form-control mx-auto w-50 rounded-pill" name="q" type="text">
+            <div class="mb-4 searchbar">
+                <textarea autocomplete="off" autofocus class="mx-auto w-100 rounded-pill" maxlength="42"
+                    name="q" rows="1" title="Search" type="search"></textarea>
                 <input autofocus hidden name="tbm" type="text" value="isch">
             </div>
-            <input class="btn btn-primary mx-1" type="submit" value="Google Search">
+            <input class="btn mx-1" type="submit" value="Image Search">
         </form>
     </main>
 </body>

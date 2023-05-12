@@ -1,55 +1,135 @@
-$blue:  #0d6efd;
-$green: #2e944b;
-$grey: #303133;
-$red: #ea433b;
-$yellow: #f5b82e;
+$blue: #4487f6;
+$blue-btn: #8ab4f8;
+$dark: #202124;
+$grey: #5f6368;
+$darkgrey: #303134;
+$light: #bdc1c6;
+$red: #f28b82;
 
-h1.display-1 {
-    font-size: 7rem;
+html, body {
+    background: $dark;
+    color: $light;
+    font-size: 14px;
+    font-family: arial, sans-serif;
+    min-height: 100%;
+    height: 100%;
 }
 
-h6.grey {
-    color: $grey;
+
+// Navbar
+
+a.nav-link {
+    color: white;
 }
+
+a.nav-link:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+
+// Header
+
+header.central {
+    min-height: 92px;
+    max-height: 290px;
+    height: calc(100% - 560px);
+
+    span {
+        color: $blue;
+        font: 16px/16px roboto-regular, arial, sans-serif;
+    }
+}
+
+header h4.advanced {
+    color: $red;
+}
+
+img.logo {
+    aspect-ratio: auto 272 / 92;
+    height: 92px;
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+    object-position: center bottom;
+    width: auto;
+}
+
+img.logo-sm {
+    height: auto;
+    width: 74px;
+}
+
+
+// Form
+
+.btn {
+    background-color: $darkgrey;
+    border: 1px solid $darkgrey;
+    color: white;
+    height: 36px;
+    min-width: 54px;
+    padding: 0 16px;
+}
+
+.btn.advanced {
+    background: $blue-btn;
+    border-color: $blue-btn;
+    border-radius: 2px;
+    color: $dark;
+    font-size: 11px;
+    height: 30px;
+    padding: 0 12px;
+}
+
+form#advanced {
+    max-width: 1140px;
+    color: white;
+}
+
+input {
+    background-color: transparent;
+    border: 1px solid $grey;
+    color: white;
+    font-size: 13px;
+    height: 30px;
+}
+
+label.col-form-label {
+    font-size: 13px;
+}
+
+p.small {
+    font-size: 11px;
+    margin-bottom: 0;
+}
+
+.searchbar {
+    width: auto;
+    margin: 0 auto;
+    max-width: 584px;
+    padding-top: 6px;
+}
+
+textarea {
+    background-color: transparent;
+    border: 1px solid $grey;
+    color: white;
+    font-size: 16px;
+    line-height: 22px;
+    min-height: 44px;
+    resize: none;
+    word-wrap: break-word;
+}
+
+
+// General
 
 .hidden {
     height: 0;
     margin: 0;
     padding: 0;
     visibility: hidden;
-}
-
-.container.middle {
-    margin-top: 200px;
-}
-
-form#advanced {
-    max-width: 1140px;
-}
-
-label.col-form-label {
-    font-size: .9rem;
-}
-
-p.small {
-    font-size: .8rem;
-    margin-bottom: 0;
-}
-
-span.blue {
-    color: $blue;
-}
-
-span.green {
-    color: $green;
-}
-
-span.red {
-    color: $red;
-}
-
-span.yellow {
-    color: $yellow;
 }
 
 

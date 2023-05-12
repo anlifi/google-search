@@ -12,11 +12,9 @@
 </head>
 
 <body>
-    <nav class="bg-light border navbar navbar-expand-sm navbar-light">
+    <nav class="navbar navbar-expand-sm">
         <div class="container-fluid">
-            <span class="navbar-brand fw-medium"><span class="h3 blue">G</span><span class="h3 red">o</span><span
-                    class="h3 yellow">o</span><span class="h3 blue">g</span><span class="h3 green">l</span><span
-                    class="h3 red">e</span></span>
+            <img class="navbar-brand logo-sm ms-2" src="https://www.google.de/images/branding/googlelogo/2x/googlelogo_light_color_272x92dp.png">
             <div class="navbar-nav ms-auto mt-2">
                 <a class="nav-link" href="index.html">Google Search</a>
             </div>
@@ -25,26 +23,26 @@
 
     <header class="mt-5 text-start">
         <div class="container-fluid">
-            <h4 class="ms-5">Advanced Search</h4>
-            <hr>
+            <h4 class="ms-5 mb-4 advanced">Advanced Search</h4>
         </div>
+        <hr>
     </header>
 
     <main class="container-fluid mx-5 py-3 text-start">
-        <form action="https://www.google.com/search?as_q=art&as_epq=bed&as_oq=cold&as_eq=down" class="me-5" id="advanced">
-            <div class="row py-3">
+        <form action="https://www.google.com/search" class="me-5" id="advanced">
+            <div class="row py-3 align-items-end">
                 <div class="col-3">
                     <h5>Find pages with...</h5>
                 </div>
                 <div class="col-4"></div>
                 <div class="col hide-sm">
-                    <h6>To do this in the search box.</h6>
+                    <h6 class="fw-bold">To do this in the search box.</h6>
                 </div>
             </div>
             <div class="row py-2 align-items-center">
-                <label class="col-sm-2 col-form-label lh-1 pt-1" for="as_q">all these words:</label>
-                <div class="col-8 col-lg-5">
-                    <input autofocus class="mx-auto w-100" name="as_q" type="text">
+                <label class="col-3 col-lg-2 col-form-label lh-1 pt-1" for="as_q">all these words:</label>
+                <div class="col-6 col-lg-5">
+                    <input autofocus class="mx-auto w-100" id="as_q" name="as_q" type="text">
                 </div>
                 <div class="col hide-sm py-2">
                     <p class="lh-1 small">
@@ -53,9 +51,9 @@
                 </div>
             </div>
             <div class="row py-2 align-items-center">
-                <label class="col-sm-2 col-form-label lh-1 pt-1" for="as_epq">this exact word or phrase:</label>
-                <div class="col-8 col-lg-5">
-                    <input autofocus class="mx-auto w-100" name="as_epq" type="text">
+                <label class="col-3 col-lg-2 col-form-label lh-1 pt-1" for="as_epq">this exact word or phrase:</label>
+                <div class="col-6 col-lg-5">
+                    <input autofocus class="mx-auto w-100" id="as_epq" name="as_epq" type="text">
                 </div>
                 <div class="col hide-sm py-2">
                     <p class="lh-1 small">
@@ -64,9 +62,9 @@
                 </div>
             </div>
             <div class="row py-2 align-items-center">
-                <label class="col-sm-2 col-form-label lh-1 pt-1" for="as_oq">any of these words:</label>
-                <div class="col-8 col-lg-5">
-                    <input autofocus class="mx-auto w-100" name="as_oq" type="text">
+                <label class="col-3 col-lg-2 col-form-label lh-1 pt-1" for="as_oq">any of these words:</label>
+                <div class="col-6 col-lg-5">
+                    <input autofocus class="mx-auto w-100" id="as_oq" name="as_oq" type="text">
                 </div>
                 <div class="col hide-sm py-2">
                     <p class="lh-1 small">
@@ -76,9 +74,9 @@
                 </div>
             </div>
             <div class="row py-2 align-items-center">
-                <label class="col-sm-2 col-form-label lh-1 pt-1" for="as_eq">none of these words:</label>
-                <div class="col-8 col-lg-5">
-                    <input autofocus class="mx-auto w-100" name="as_eq" type="text">
+                <label class="col-3 col-lg-2 col-form-label lh-1 pt-1" for="as_eq">none of these words:</label>
+                <div class="col-6 col-lg-5">
+                    <input autofocus class="mx-auto w-100" id="as_eq" name="as_eq" type="text">
                 </div>
                 <div class="col hide-sm py-2">
                     <p class="lh-1 small">
@@ -87,10 +85,10 @@
                     </p>
                 </div>
             </div>
-            <div class="row py-2 align-items-center">
-                <div class="col-sm-2"></div>
-                <div class="col-8 col-lg-5 text-end">
-                    <input class="btn btn-primary" type="submit" value="Advanced Search">
+            <div class="row py-3 align-items-center">
+                <div class="col-3 col-lg-2"></div>
+                <div class="col-6 col-lg-5 text-end">
+                    <input class="btn advanced fw-bold" type="submit" value="Advanced Search">
                 </div>
                 <div class="col hide-sm"></div>
             </div>

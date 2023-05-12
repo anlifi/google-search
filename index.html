@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <nav class="bg-light border navbar navbar-expand-sm navbar-light">
+    <nav class="navbar navbar-expand-sm">
         <div class="container-fluid">
             <div class="navbar-nav ms-auto mt-2">
                 <a class="nav-link" href="image.html">Image Search</a>
@@ -21,26 +21,21 @@
         </div>
     </nav>
 
-    <header class="mt-7 text-center">
-        <div class="container middle">
-            <div class="row">
-                <div class="col"></div>
-                <h1 class="col-7 display-1 fw-medium">
-                    <span class="blue">G</span><span class="red">o</span><span class="yellow">o</span><span
-                        class="blue">g</span><span class="green">l</span><span class="red">e</span>
-                </h1>
-                <div class="col"></div>
-            </div>
+    <header class="position-relative central">
+        <div class="position-absolute bottom-0 start-50 translate-middle-x">
+            <img alt="Google logo" class="logo"
+                src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_light_color_272x92dp.png">
         </div>
     </header>
 
-    <main class="container-fluid py-5 text-center">
+    <main class="container-fluid py-4 text-center">
         <form action="https://www.google.com/search">
-            <div class="mb-4">
-                <input autofocus class="form-control mx-auto w-50 rounded-pill" name="q" type="text">
+            <div class="mb-4 searchbar">
+                <textarea autocomplete="off" autofocus class="mx-auto w-100 rounded-pill" maxlength="42"
+                    name="q" rows="1" title="Search" type="search"></textarea>
             </div>
-            <input class="btn btn-primary mx-1" name="btnK" type="submit" value="Google Search">
-            <input class="btn btn-primary mx-1" name="btnI" type="submit" value="I'm Feeling Lucky">
+            <input class="btn mx-1" name="btnK" type="submit" value="Google Search">
+            <input class="btn mx-1" name="btnI" type="submit" value="I'm Feeling Lucky">
         </form>
     </main>
 </body>

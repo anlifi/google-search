@@ -1,0 +1,64 @@
+$blue:  #0d6efd;
+$green: #2e944b;
+$grey: #303133;
+$red: #ea433b;
+$yellow: #f5b82e;
+
+h1.display-1 {
+    font-size: 7rem;
+}
+
+h6.grey {
+    color: $grey;
+}
+
+.hidden {
+    height: 0;
+    margin: 0;
+    padding: 0;
+    visibility: hidden;
+}
+
+.container.middle {
+    margin-top: 200px;
+}
+
+form#advanced {
+    max-width: 1140px;
+}
+
+label.col-form-label {
+    font-size: .9rem;
+}
+
+p.small {
+    font-size: .8rem;
+    margin-bottom: 0;
+}
+
+span.blue {
+    color: $blue;
+}
+
+span.green {
+    color: $green;
+}
+
+span.red {
+    color: $red;
+}
+
+span.yellow {
+    color: $yellow;
+}
+
+
+@media only screen and (max-width: 992px) {
+    .hide-sm {
+        height: 0;
+        margin: 0;
+        padding: 0;
+        visibility: hidden;
+        width: 0;
+    }
+}

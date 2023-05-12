@@ -1,0 +1,59 @@
+h1.display-1 {
+  font-size: 7rem;
+}
+
+h6.grey {
+  color: #303133;
+}
+
+.hidden {
+  height: 0;
+  margin: 0;
+  padding: 0;
+  visibility: hidden;
+}
+
+.container.middle {
+  margin-top: 200px;
+}
+
+form#advanced {
+  max-width: 1140px;
+}
+
+label.col-form-label {
+  font-size: 0.9rem;
+}
+
+p.small {
+  font-size: 0.8rem;
+  margin-bottom: 0;
+}
+
+span.blue {
+  color: #0d6efd;
+}
+
+span.green {
+  color: #2e944b;
+}
+
+span.red {
+  color: #ea433b;
+}
+
+span.yellow {
+  color: #f5b82e;
+}
+
+@media only screen and (max-width: 992px) {
+  .hide-sm {
+    height: 0;
+    margin: 0;
+    padding: 0;
+    visibility: hidden;
+    width: 0;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

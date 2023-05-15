@@ -95,6 +95,11 @@ input {
     height: 30px;
 }
 
+input:focus-visible, input:focus, input:focus-within, input:active {
+    border: 1px solid $blue-btn;
+    outline: none;
+}
+
 label.col-form-label {
     font-size: 13px;
 }
@@ -109,17 +114,27 @@ p.small {
     margin: 0 auto;
     max-width: 584px;
     padding-top: 6px;
-}
+    
+    input.rounded-pill {
+        background-color: transparent;
+        border: 1px solid $grey;
+        color: white;
+        font-size: 16px;
+        line-height: 22px;
+        min-height: 44px;
+    }
 
-textarea {
-    background-color: transparent;
-    border: 1px solid $grey;
-    color: white;
-    font-size: 16px;
-    line-height: 22px;
-    min-height: 44px;
-    resize: none;
-    word-wrap: break-word;
+    input.rounded-pill:focus {
+        box-shadow: none;
+        background-color: $darkgrey;
+        border: 1px solid $darkgrey;
+    }
+    
+    input.rounded-pill:hover {
+        box-shadow: none;
+        background-color: $darkgrey;
+        border: 1px solid $darkgrey;
+    }
 }
 
 

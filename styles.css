@@ -84,11 +84,16 @@ input:focus-visible, input:focus, input:focus-within, input:active {
 
 label.col-form-label {
   font-size: 13px;
+  color: #bdc1c6;
 }
 
 p.small {
   font-size: 11px;
   margin-bottom: 0;
+  color: #bdc1c6;
+}
+p.small span {
+  color: white;
 }
 
 .searchbar {
